@@ -58,6 +58,8 @@
     if (nat) {
       if (navigator.share) {
         nat.hidden = false;
+        var lbl = box.querySelector("[data-share-label]");
+        if (lbl) lbl.hidden = true;
         nat.addEventListener("click", function () {
           navigator.share({ title: document.title, text: text, url: shareUrl }).catch(function () {});
         });
