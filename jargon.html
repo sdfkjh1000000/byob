@@ -47,7 +47,25 @@
     { "@type": "DefinedTerm", "name": "Floorplan", "description": "The financing a dealer uses to stock inventory, which accrues interest daily, so aged inventory pressures the dealer to deal." },
     { "@type": "DefinedTerm", "name": "Front-End vs. Back-End", "description": "Front-end is profit on the vehicle itself; back-end is profit from financing markup and add-ons sold in the finance office." },
     { "@type": "DefinedTerm", "name": "Stair-Step (Volume Bonus)", "description": "Manufacturer bonuses paid to a dealer for hitting sales targets, which can make an end-of-period deal that looks like a loss still profitable." },
-    { "@type": "DefinedTerm", "name": "Subvented APR", "description": "A below-market interest rate subsidized by the manufacturer's captive finance company to promote sales." }
+    { "@type": "DefinedTerm", "name": "Subvented APR", "description": "A below-market interest rate subsidized by the manufacturer's captive finance company to promote sales." },
+    { "@type": "DefinedTerm", "name": "MSRP", "description": "Manufacturer's Suggested Retail Price, the price on the window sticker; a starting point to negotiate down from, not a fixed price." },
+    { "@type": "DefinedTerm", "name": "OTD (Out-the-Door)", "description": "The total a buyer pays to drive away: vehicle price plus tax, title, registration, and all fees." },
+    { "@type": "DefinedTerm", "name": "Monroney", "description": "The federally required new-car window sticker listing MSRP, options and prices, destination charge, and fuel economy; separate from a dealer's market-adjustment sticker." },
+    { "@type": "DefinedTerm", "name": "Destination charge", "description": "The manufacturer-set charge to ship a car to the dealer, printed on the Monroney, the same at every dealer for a model and effectively non-negotiable." },
+    { "@type": "DefinedTerm", "name": "F&I (Finance and Insurance)", "description": "The dealership office that arranges financing and sells add-on products like warranties and GAP after the price is agreed." },
+    { "@type": "DefinedTerm", "name": "APR (Annual Percentage Rate)", "description": "The true yearly cost of a loan including certain fees; the honest way to compare loans, unlike a monthly payment." },
+    { "@type": "DefinedTerm", "name": "OAC / WAC", "description": "On or With Approved Credit; advertised rates and payments that require top-tier credit to qualify for." },
+    { "@type": "DefinedTerm", "name": "CPO (Certified Pre-Owned)", "description": "A used car with a manufacturer-backed inspection and factory warranty; a dealer's own certified label is not the same." },
+    { "@type": "DefinedTerm", "name": "PDI (Pre-Delivery Inspection)", "description": "The checkover a new car gets before delivery, where transit or lot damage may be repaired." },
+    { "@type": "DefinedTerm", "name": "ACV (Actual Cash Value)", "description": "The wholesale value of a trade-in; the trade allowance shown to the buyer can be moved up or down and offset in the car's price." },
+    { "@type": "DefinedTerm", "name": "Dealer pack", "description": "An amount added to a car's cost internally before a salesperson's commission is figured; distinct from payment packing." },
+    { "@type": "DefinedTerm", "name": "Prep fee", "description": "A charge to prepare a new car that manufacturers typically already reimburse the dealer for, making it often duplicative." },
+    { "@type": "DefinedTerm", "name": "Buyers Guide", "description": "The FTC-required window sticker on most dealer-sold used cars showing warranty terms or As Is - No Dealer Warranty." },
+    { "@type": "DefinedTerm", "name": "BHPH (Buy Here Pay Here)", "description": "A dealership that is also the lender, typically subprime, with high rates and sometimes GPS or starter-interrupt devices." },
+    { "@type": "DefinedTerm", "name": "Money factor", "description": "A lease's interest rate written as a small decimal; multiply by 2,400 for the approximate APR." },
+    { "@type": "DefinedTerm", "name": "Residual value", "description": "The leasing company's projected end-of-lease value of the car, set at signing; a higher residual lowers the payment." },
+    { "@type": "DefinedTerm", "name": "Capitalized cost", "description": "The negotiable price a lease is based on; a cap cost reduction is effectively a lease down payment." },
+    { "@type": "DefinedTerm", "name": "Due at Signing (DAS)", "description": "Everything paid up front on a lease: first payment, fees, taxes, and any down payment." }
   ]
 }
 </script>
@@ -75,7 +93,7 @@
   <section class="hero wrap section--tight" aria-labelledby="jh">
     <p class="eyebrow">The Decoder</p>
     <h1 id="jh">The words they use to move money past you.</h1>
-    <p class="hero__lede">A dealership runs on language most buyers never learned. Here's the plain-English translation for what they say on the floor and in the finance office — so nothing gets by you.</p>
+    <p class="hero__lede">A dealership runs on language most buyers never learned. Here's the plain-English translation for the sales floor, the finance office, and the lease desk — the acronyms, the slang, all of it. Search or filter below, and nothing gets by you.</p>
   </section>
 
   <section class="section section--tight" aria-labelledby="dh">
@@ -92,14 +110,39 @@
             <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
             <button class="chip" type="button" data-filter="sales" aria-pressed="false">Sales floor</button>
             <button class="chip" type="button" data-filter="finance" aria-pressed="false">Finance office</button>
+            <button class="chip" type="button" data-filter="lease" aria-pressed="false">Leasing</button>
             <button class="chip" type="button" data-filter="money" aria-pressed="false">Behind the curtain</button>
           </div>
         </div>
 
         <div class="decoder__list">
           <article class="term" data-cat="sales">
+            <div class="term__head"><h3 class="term__name">MSRP</h3><span class="term__tag">Sales floor</span></div>
+            <p class="term__def"><strong>Manufacturer's Suggested Retail Price</strong> — the price the automaker prints on the window sticker. "Suggested" is the word that matters: it's a starting point, not a fixed price, and on most cars you can pay under it.</p>
+            <p class="term__move"><strong>Your move:</strong> treat MSRP as the ceiling you negotiate down from, never the price. The one exception is a genuinely scarce, in-demand model.</p>
+          </article>
+
+          <article class="term" data-cat="sales">
+            <div class="term__head"><h3 class="term__name">OTD (Out-the-Door)</h3><span class="term__tag">Sales floor</span></div>
+            <p class="term__def">The real total you drive away paying: vehicle price plus tax, title, registration, and every fee. It's the one number that can't hide anything.</p>
+            <p class="term__move"><strong>Your move:</strong> negotiate the OTD in writing and ignore the monthly payment until it's set. Almost every trick on this page lives in the gap between the price they quote and the OTD you actually pay.</p>
+          </article>
+
+          <article class="term" data-cat="sales">
+            <div class="term__head"><h3 class="term__name">Monroney</h3><span class="term__tag">Sales floor</span></div>
+            <p class="term__def">The official <strong>window sticker</strong> the federal government has required on every new car since 1958. It lists the MSRP, the options and their prices, the destination charge, and the fuel economy. The second sticker some dealers paste beside it — "market adjustment," "additional dealer markup" — is not the Monroney and carries no official weight.</p>
+            <p class="term__move"><strong>Your move:</strong> read the real Monroney. Anything on a separate sticker is the dealer's wish, not the manufacturer's price.</p>
+          </article>
+
+          <article class="term" data-cat="sales">
+            <div class="term__head"><h3 class="term__name">Destination / Freight</h3><span class="term__tag">Sales floor</span></div>
+            <p class="term__def">The charge to ship the car from the factory to the dealer. It's real, it's set by the manufacturer, it's printed on the Monroney, and it's the same at every dealer selling that model — so unlike the dealer's own fees, it doesn't move.</p>
+            <p class="term__move"><strong>Your move:</strong> don't burn energy fighting destination. Spend it on the dealer's fees and add-ons, which do move.</p>
+          </article>
+
+          <article class="term" data-cat="sales">
             <div class="term__head"><h3 class="term__name">ADM / Market Adjustment</h3><span class="term__tag">Sales floor</span></div>
-            <p class="term__def"><strong>Additional Dealer Markup</strong> — a charge added <em>above</em> the manufacturer's sticker price (MSRP), on a second sticker beside the official window label. It's not a fee you owe anyone and the manufacturer didn't set it. It's pure extra margin on a car the dealer thinks is in demand.</p>
+            <p class="term__def"><strong>Additional Dealer Markup</strong> — a charge added <em>above</em> the manufacturer's sticker price (MSRP), on a second sticker beside the official window label. It's not a fee you owe anyone and the manufacturer didn't set it. It's pure extra margin on a car the dealer thinks is in demand. In 2026 the FTC warned dozens of dealer groups that a mandatory markup like this belongs in the advertised price, not sprung on you at the desk.</p>
             <p class="term__move"><strong>Your move:</strong> it's optional and negotiable. On a car that isn't genuinely scarce, it's the first thing to strike off — or the reason to buy the same car somewhere else.</p>
           </article>
 
@@ -109,10 +152,82 @@
             <p class="term__move"><strong>Your move:</strong> negotiate one number only — the <strong>out-the-door price</strong>. Settle that in writing before you'll discuss trade, down, or payment.</p>
           </article>
 
+          <article class="term" data-cat="sales">
+            <div class="term__head"><h3 class="term__name">The Road to the Sale</h3><span class="term__tag">Sales floor</span></div>
+            <p class="term__def">The scripted, multi-step process a salesperson is trained to walk you through: greeting, "needs assessment," the walk-around, the test drive, a trial close, then numbers, then the hand-off to finance. It feels like a friendly conversation. It's a track.</p>
+            <p class="term__move"><strong>Your move:</strong> knowing the steps lets you skip them. Say it up front: "I know the car, I'm pre-approved, send me your out-the-door price."</p>
+          </article>
+
+          <article class="term" data-cat="sales">
+            <div class="term__head"><h3 class="term__name">T.O. / Turnover</h3><span class="term__tag">Sales floor</span></div>
+            <p class="term__def">When you push back and your friendly salesperson suddenly "goes to get the manager," you're being turned over to a closer whose whole job is the deals the first person couldn't close.</p>
+            <p class="term__move"><strong>Your move:</strong> a new face at the desk means you're winning, not losing. Hold your number; the escalation is a sign they want the sale.</p>
+          </article>
+
+          <article class="term" data-cat="sales">
+            <div class="term__head"><h3 class="term__name">Be-back</h3><span class="term__tag">Sales floor</span></div>
+            <p class="term__def">Their word for a customer who leaves saying "I'll think about it and be back." Dealers live by "be-backs never come back," which is exactly why the pressure to buy <em>today</em> comes on so heavy.</p>
+            <p class="term__move"><strong>Your move:</strong> you're always allowed to leave and return. A deadline that only exists inside the showroom isn't your deadline.</p>
+          </article>
+
+          <article class="term" data-cat="sales">
+            <div class="term__head"><h3 class="term__name">Lay-down / Grinder</h3><span class="term__tag">Sales floor</span></div>
+            <p class="term__def">Two labels for two kinds of buyer. A <strong>lay-down</strong> takes the first offer without a fight. A <strong>grinder</strong> negotiates every line. They hope you're the first and grumble about the second.</p>
+            <p class="term__move"><strong>Your move:</strong> be the grinder. It's a compliment disguised as a complaint.</p>
+          </article>
+
+          <article class="term" data-cat="sales">
+            <div class="term__head"><h3 class="term__name">The Bump</h3><span class="term__tag">Sales floor</span></div>
+            <p class="term__def">Any nudge to get you to raise your number. Tell them "$250 a month," and the trained reply is "up to—?" — and plenty of people bump themselves to $300 without anyone pushing.</p>
+            <p class="term__move"><strong>Your move:</strong> set your out-the-door ceiling before you walk in and let every bump bounce off it. $50 a month is over $3,000 across a six-year loan.</p>
+          </article>
+
+          <article class="term" data-cat="sales">
+            <div class="term__head"><h3 class="term__name">Word Track</h3><span class="term__tag">Sales floor</span></div>
+            <p class="term__def">The memorized reply a salesperson has ready for every objection — a smooth, rehearsed answer to each "no." When the comeback is instant and polished, you're hearing a track, not a person thinking.</p>
+            <p class="term__move"><strong>Your move:</strong> silence beats a script. "That doesn't work for me," with no explanation, gives the track nothing to grab.</p>
+          </article>
+
+          <article class="term" data-cat="sales">
+            <div class="term__head"><h3 class="term__name">Mini &amp; Spiff</h3><span class="term__tag">Sales floor</span></div>
+            <p class="term__def">A <strong>mini</strong> is the minimum commission (often around $50–$150) a salesperson earns on a no-profit deal, which is why they'd rather sell add-ons or move you to a pricier car. A <strong>spiff</strong> is a bonus for moving a specific model or product, which is why one car or one warranty suddenly gets the hard push.</p>
+            <p class="term__move"><strong>Your move:</strong> when one car or product is pushed harder than the rest, ask who benefits. Sometimes it's a spiff, not a fit.</p>
+          </article>
+
+          <article class="term" data-cat="sales">
+            <div class="term__head"><h3 class="term__name">CPO (Certified Pre-Owned)</h3><span class="term__tag">Sales floor</span></div>
+            <p class="term__def">A used car with a manufacturer-backed inspection and an extended factory warranty. The catch: "certified" only means something when the <em>automaker</em> stands behind it. A dealer's own in-house "certified" badge is just marketing, honored nowhere else.</p>
+            <p class="term__move"><strong>Your move:</strong> ask who certifies it — the manufacturer or the dealer — and get the warranty terms in writing. Only the automaker's program carries the factory guarantee.</p>
+          </article>
+
+          <article class="term" data-cat="sales">
+            <div class="term__head"><h3 class="term__name">PDI (Pre-Delivery Inspection)</h3><span class="term__tag">Sales floor</span></div>
+            <p class="term__def">The checkover a new car is supposed to get before it's handed to you. Transit damage and lot mishaps get fixed here, sometimes without anyone mentioning it.</p>
+            <p class="term__move"><strong>Your move:</strong> ask for the PDI record, and ask in writing whether the car had any repairs before delivery. Check the paint and panel gaps yourself when you take the keys.</p>
+          </article>
+
           <article class="term" data-cat="finance">
             <div class="term__head"><h3 class="term__name">Doc Fee</h3><span class="term__tag">Finance office</span></div>
             <p class="term__def">A "documentation" or "processing" fee for the paperwork. Some states cap it — California at $85, New York at $175, Texas treats $225 as the line a dealer has to justify going past — and others don't regulate it at all, which is how it climbs past $800. (Caps as of 2026; they change.)</p>
             <p class="term__move"><strong>Your move:</strong> look up your state's cap before you go. Over the cap is a hard no; under it, it still counts toward your out-the-door number to negotiate against.</p>
+          </article>
+
+          <article class="term" data-cat="finance">
+            <div class="term__head"><h3 class="term__name">F&amp;I</h3><span class="term__tag">Finance office</span></div>
+            <p class="term__def"><strong>Finance and Insurance</strong> — the office you visit after you've agreed on price, and the person who runs it. "Insurance" is the tell: this is where warranties, GAP, and other products get sold, on top of arranging your loan.</p>
+            <p class="term__move"><strong>Your move:</strong> walk in expecting a second negotiation, not just paperwork. Every "standard" product in here is optional.</p>
+          </article>
+
+          <article class="term" data-cat="finance">
+            <div class="term__head"><h3 class="term__name">APR</h3><span class="term__tag">Finance office</span></div>
+            <p class="term__def"><strong>Annual Percentage Rate</strong> — the true yearly cost of a loan, including certain fees, expressed as a rate. It's the honest way to compare loans, unlike a monthly payment, which can be made to look good by stretching the term.</p>
+            <p class="term__move"><strong>Your move:</strong> compare every offer by APR, not by payment. A lower payment on a longer term usually costs you more.</p>
+          </article>
+
+          <article class="term" data-cat="finance">
+            <div class="term__head"><h3 class="term__name">OAC / WAC</h3><span class="term__tag">Finance office</span></div>
+            <p class="term__def"><strong>On (or With) Approved Credit</strong> — the fine print under every advertised payment or "0% APR" deal. It means those terms are for buyers with top-tier credit, which most people don't have.</p>
+            <p class="term__move"><strong>Your move:</strong> assume the advertised number isn't yours until they run your credit. Your own pre-approval tells you the rate you'll actually get.</p>
           </article>
 
           <article class="term term--flag" data-cat="finance">
@@ -146,9 +261,81 @@
           </article>
 
           <article class="term" data-cat="finance">
+            <div class="term__head"><h3 class="term__name">Dealer Pack / "The Pack"</h3><span class="term__tag">Finance office</span></div>
+            <p class="term__def">An amount the dealer adds to a car's real cost <em>internally</em>, before a salesperson's commission is figured. It lets them "give away" profit in negotiation that was never theirs to give — you feel like you won, and the pack is still there. (Not the same as payment packing.)</p>
+            <p class="term__move"><strong>Your move:</strong> you can't see the pack, so don't negotiate against "their cost." Negotiate against the market — invoice, incentives, and competing out-the-door quotes.</p>
+          </article>
+
+          <article class="term" data-cat="finance">
+            <div class="term__head"><h3 class="term__name">Prep Fee / Dealer Prep</h3><span class="term__tag">Finance office</span></div>
+            <p class="term__def">A charge to "prepare" your new car — wash it, pull the plastic, top the fluids. The manufacturer already pays the dealer an allowance to do this, so billing you again is usually double-dipping.</p>
+            <p class="term__move"><strong>Your move:</strong> push back on a separate prep fee. It's typically already covered, and it's one of the softer fees to get struck.</p>
+          </article>
+
+          <article class="term term--flag" data-cat="finance">
+            <div class="term__head"><h3 class="term__name">Dealer Add-ons</h3><span class="term__tag">Finance office</span></div>
+            <p class="term__def">The cluster of high-margin extras a dealer bolts on: paint and fabric "protection," VIN etching, nitrogen in the tires, pinstripes, "protection packages." Marked up enormously, worth a fraction, and often already applied so you feel stuck.</p>
+            <p class="term__move"><strong>Your move:</strong> decline all of it. If it's already on the car, ask them to eat the cost — you didn't order it. None of it should stand between you and the deal.</p>
+          </article>
+
+          <article class="term term--flag" data-cat="finance">
+            <div class="term__head"><h3 class="term__name">ACV (Actual Cash Value)</h3><span class="term__tag">Finance office</span></div>
+            <p class="term__def">What your trade-in is really worth at wholesale — what the dealer expects to get for it at auction. The "trade allowance" they show you is a separate, movable number: they can inflate it to look generous and bury the difference in the car's price, or lowball it and pocket the spread.</p>
+            <p class="term__move"><strong>Your move:</strong> negotiate the car's price and your trade as two separate deals, and know your car's real value first so a moved "allowance" can't distract you.</p>
+          </article>
+
+          <article class="term" data-cat="finance">
+            <div class="term__head"><h3 class="term__name">Buyers Guide / "As-Is"</h3><span class="term__tag">Finance office</span></div>
+            <p class="term__def">The <strong>Buyers Guide</strong> is an FTC-required window sticker on most used cars a dealer sells, showing whether the car comes with a warranty or is sold <strong>"As Is — No Dealer Warranty."</strong> As-is means every problem becomes yours the moment you sign. (A number of states restrict or ban as-is used sales — check yours.)</p>
+            <p class="term__move"><strong>Your move:</strong> read the Buyers Guide before you buy used. "As is" isn't automatically a dealbreaker, but it means you need your own pre-purchase inspection, not their word.</p>
+          </article>
+
+          <article class="term term--flag" data-cat="finance">
+            <div class="term__head"><h3 class="term__name">BHPH (Buy Here Pay Here)</h3><span class="term__tag">Finance office</span></div>
+            <p class="term__def">A lot where the dealer is also your lender. Aimed at buyers with damaged credit, it comes with high rates, frequent (often weekly) payments, and sometimes a GPS or starter-interrupt device that can disable the car if you're late — regulators have penalized lenders for shutting cars off wrongly.</p>
+            <p class="term__move"><strong>Your move:</strong> treat BHPH as a last resort. A credit union's second-chance loan is almost always cheaper — get a pre-approval before you consider one.</p>
+          </article>
+
+          <article class="term" data-cat="finance">
+            <div class="term__head"><h3 class="term__name">Rule of 78s / Precomputed Interest</h3><span class="term__tag">Finance office</span></div>
+            <p class="term__def">A way of front-loading a loan's interest so paying it off early saves you far less than you'd expect. Federal law bans it on precomputed loans longer than 61 months, but shorter loans can still use it. <strong>Simple interest</strong> — interest only on what you still owe — is the fair kind.</p>
+            <p class="term__move"><strong>Your move:</strong> ask whether the loan is simple interest, and check for any prepayment penalty. If you might pay early, both answers matter.</p>
+          </article>
+
+          <article class="term" data-cat="lease">
             <div class="term__head"><h3 class="term__name">Acquisition &amp; Disposition Fees</h3><span class="term__tag">Leasing</span></div>
             <p class="term__def">Lease fees. The <strong>acquisition fee</strong> starts the lease (often $595–$1,095); the <strong>disposition fee</strong> is charged at the end to "prepare" the returned car ($350–$500). Both are set by the leasing company, not the government.</p>
             <p class="term__move"><strong>Your move:</strong> ask for both up front and fold them into the true cost — the disposition fee is sometimes waived if you lease or buy from them again.</p>
+          </article>
+
+          <article class="term" data-cat="lease">
+            <div class="term__head"><h3 class="term__name">Money Factor (MF)</h3><span class="term__tag">Leasing</span></div>
+            <p class="term__def">A lease's interest rate, written as a small decimal like 0.00125 instead of a percentage. Multiply it by 2,400 to get the rough APR (0.00125 × 2,400 ≈ 3%). Like a loan's rate, the dealer can mark it up above what you qualify for.</p>
+            <p class="term__move"><strong>Your move:</strong> ask for the money factor and convert it, and ask what rate you actually qualified for. A payment-only conversation keeps the rate out of sight.</p>
+          </article>
+
+          <article class="term" data-cat="lease">
+            <div class="term__head"><h3 class="term__name">Residual Value (RV)</h3><span class="term__tag">Leasing</span></div>
+            <p class="term__def">What the leasing company projects the car will be worth when the lease ends. It's set at signing and you don't negotiate it, but it drives your payment: a higher residual means you're financing less lost value, so the monthly drops.</p>
+            <p class="term__move"><strong>Your move:</strong> a high residual is your friend on a lease. Cars that hold their value are usually the better ones to lease.</p>
+          </article>
+
+          <article class="term" data-cat="lease">
+            <div class="term__head"><h3 class="term__name">Capitalized Cost (Cap Cost)</h3><span class="term__tag">Leasing</span></div>
+            <p class="term__def">The price the lease is built on — the leasing version of the purchase price, and just as negotiable. A <strong>cap cost reduction</strong> is a fancy name for a lease down payment; it lowers the monthly, but you lose it entirely if the car is totaled early.</p>
+            <p class="term__move"><strong>Your move:</strong> negotiate the cap cost exactly like a purchase price, before you discuss the monthly. Think twice about a big cap cost reduction — that cash is at risk.</p>
+          </article>
+
+          <article class="term" data-cat="lease">
+            <div class="term__head"><h3 class="term__name">DAS (Due at Signing)</h3><span class="term__tag">Leasing</span></div>
+            <p class="term__def">Everything you hand over up front on a lease: first payment, fees, taxes, and any down payment, rolled into one number. A "low monthly" ad often hides a fat due-at-signing.</p>
+            <p class="term__move"><strong>Your move:</strong> compare leases by total cost — due at signing plus all the payments — not by the monthly alone.</p>
+          </article>
+
+          <article class="term" data-cat="lease">
+            <div class="term__head"><h3 class="term__name">Mileage Allowance / Overage</h3><span class="term__tag">Leasing</span></div>
+            <p class="term__def">The yearly miles a lease includes (commonly 10,000–15,000) and the penalty for every mile over when you turn it in — often $0.10 to $0.30 a mile, and higher on some leases.</p>
+            <p class="term__move"><strong>Your move:</strong> be honest about how far you drive. Buying extra miles up front is cheaper than paying overage later, and going way over can make leasing the wrong call entirely.</p>
           </article>
 
           <article class="term" data-cat="money">
