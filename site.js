@@ -14,25 +14,36 @@
     setTimeout(function () { btn.textContent = btn.getAttribute("data-label"); }, 1800);
   }
 
-  function copyText(text, btn) {
+  function copyValue(text, btn, field) {
+    var ok = false, temp = null, el = field, active = document.activeElement;
+    try {
+      if (!el || (el.tagName !== "TEXTAREA" && el.tagName !== "INPUT")) {
+        temp = el = document.createElement("textarea");
+        el.value = text; el.setAttribute("readonly", "");
+        el.style.position = "fixed"; el.style.top = "0"; el.style.left = "-9999px";
+        document.body.appendChild(el);
+      }
+      el.focus(); el.select();
+      try { el.setSelectionRange(0, el.value.length); } catch (e) {}
+      ok = document.execCommand && document.execCommand("copy");
+    } catch (e) { ok = false; }
+    if (temp && temp.parentNode) { temp.parentNode.removeChild(temp); if (active && active.focus) active.focus(); }
+    if (ok) { flash(btn, "Copied ✓"); return; }
     if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).then(function () { flash(btn, "Copied ✓"); }, function () { flash(btn, "Press Ctrl+C"); });
-      return;
-    }
-    var ta = document.createElement("textarea");
-    ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "absolute"; ta.style.left = "-9999px";
-    document.body.appendChild(ta); ta.select();
-    try { document.execCommand("copy"); flash(btn, "Copied ✓"); } catch (e) { flash(btn, "Press Ctrl+C"); }
-    document.body.removeChild(ta);
+      navigator.clipboard.writeText(text).then(function () { flash(btn, "Copied ✓"); }, function () { flash(btn, "Select all, then copy"); });
+    } else { flash(btn, "Select all, then copy"); }
   }
 
   document.addEventListener("click", function (e) {
     var el = e.target.closest && e.target.closest("[data-print],[data-copy],[data-share-copy]");
     if (!el) return;
     if (el.hasAttribute("data-print")) { window.print(); return; }
-    if (el.hasAttribute("data-share-copy")) { e.preventDefault(); copyText(el.getAttribute("data-url") || location.href, el); return; }
+    if (el.hasAttribute("data-share-copy")) { e.preventDefault(); copyValue(el.getAttribute("data-url") || location.href, el, null); return; }
     var tgt = document.getElementById(el.getAttribute("data-copy"));
-    if (tgt) copyText((tgt.innerText || tgt.textContent).replace(/\n{3,}/g, "\n\n").trim(), el);
+    if (!tgt) return;
+    var isField = tgt.tagName === "TEXTAREA" || tgt.tagName === "INPUT";
+    var text = isField ? tgt.value : (tgt.innerText || tgt.textContent).replace(/\n{3,}/g, "\n\n").trim();
+    copyValue(text, el, isField ? tgt : null);
   });
 
   var canonical = document.querySelector('link[rel="canonical"]');
