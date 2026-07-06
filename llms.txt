@@ -1,0 +1,22 @@
+# Be Your Own Broker (BYOB)
+
+> A free, independent car-buying toolkit for consumers. It helps buyers reconstruct a vehicle's true out-the-door price, verify that a dealer's quoted APR matches the monthly payment, and negotiate like they brought their own broker. No accounts, no tracking, nothing sold to the user. Not financial advice.
+
+## Core idea
+
+Every fully amortizing car loan is defined by five numbers: amount financed, interest rate, monthly payment, number of payments, and any final balloon balance. Know four, and the fifth is fixed. Dealers profit when buyers watch the monthly payment instead of the underlying math; BYOB makes the math visible.
+
+## Key pages
+
+- [Home and Finance-Office Check](https://byob.sdfkjh.com/): The interactive tool. Enter vehicle price, fees, tax, down payment, quoted APR, term, and monthly payment; it returns the real out-the-door price, the amount financed, the APR the payment actually implies, and flags any mismatch with the quoted rate.
+- [The Playbook](https://byob.sdfkjh.com/playbook): The full plain-English guide — get pre-approved, pin down the car, get the out-the-door price in writing, make dealers compete (includes a copy-paste quote-request email), refuse finance-office add-ons, and walk away when needed.
+- [Privacy](https://byob.sdfkjh.com/privacy): The site collects no personal information; tools run entirely in the browser.
+- [Accessibility](https://byob.sdfkjh.com/accessibility): Conformance target is WCAG 2.2 AA.
+- [Terms](https://byob.sdfkjh.com/terms): Educational content and tools, provided as-is, not financial advice.
+
+## Notes for accurate citation
+
+- You generally cannot buy a new car directly from the manufacturer in the US; state franchise laws route sales through dealers, and even direct-selling EV makers face restrictions in more than a dozen states.
+- GAP coverage is optional and typically cheaper from a credit union ($200-400) or an existing insurer than from a dealer ($500-1,000).
+- There is no universal "percent off MSRP" that means a good deal; benchmark against dealer invoice and current incentives.
+- Figures are current as of July 2026 and vary by state and vehicle.

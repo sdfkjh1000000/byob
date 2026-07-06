@@ -1,0 +1,255 @@
+<!doctype html>
+<!--
+  ██████╗ ██╗   ██╗ ██████╗ ██████╗
+  ██╔══██╗╚██╗ ██╔╝██╔═══██╗██╔══██╗   BE YOUR OWN BROKER
+  ██████╔╝ ╚████╔╝ ██║   ██║██████╔╝   on your side of the desk.
+  ██╔══██╗  ╚██╔╝  ██║   ██║██╔══██╗
+  ██████╔╝   ██║   ╚██████╔╝██████╔╝
+  ╚═════╝    ╚═╝    ╚═════╝ ╚═════╝
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BYOB — Be Your Own Broker | Check your car deal before you sign</title>
+<meta name="description" content="A free, no-signup toolkit for car buyers. Reconstruct your real out-the-door price, catch the interest-rate switch dealers hope you miss, and learn to negotiate like you brought your own broker.">
+<link rel="canonical" href="https://byob.sdfkjh.com/">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Be Your Own Broker">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://byob.sdfkjh.com/">
+<meta property="og:title" content="Be Your Own Broker — check your car deal before you sign">
+<meta property="og:description" content="Reconstruct your real out-the-door price and catch the rate switch dealers hope you miss. Free, no signup.">
+<meta property="og:image" content="https://byob.sdfkjh.com/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Be Your Own Broker — check your car deal before you sign">
+<meta name="twitter:description" content="Reconstruct your real out-the-door price and catch the rate switch dealers hope you miss. Free, no signup.">
+<meta name="twitter:image" content="https://byob.sdfkjh.com/og-card.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://byob.sdfkjh.com/#website",
+      "url": "https://byob.sdfkjh.com/",
+      "name": "Be Your Own Broker",
+      "description": "Free car-buying toolkit: out-the-door price and loan-math checker plus a plain-English negotiation playbook.",
+      "publisher": { "@id": "https://byob.sdfkjh.com/#org" },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://byob.sdfkjh.com/#org",
+      "name": "Be Your Own Broker",
+      "alternateName": "BYOB",
+      "url": "https://byob.sdfkjh.com/",
+      "logo": "https://byob.sdfkjh.com/og-card.png",
+      "description": "Consumer-side car-buying education and tools."
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://byob.sdfkjh.com/#tool",
+      "name": "Finance-Office Check",
+      "url": "https://byob.sdfkjh.com/#check",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "description": "Reconstructs a car's true out-the-door price and checks whether the quoted APR matches the monthly payment."
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="/">BY<em>O</em>B <span class="brand__full">Be Your Own Broker</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu">☰</button>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="#check" aria-current="page">The Check</a>
+      <a href="/playbook">The Playbook</a>
+      <a href="#why">Why BYOB</a>
+      <a class="nav__cta" href="#check">Check a deal</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero wrap" aria-labelledby="hero-h">
+    <div class="hero__grid">
+      <div>
+        <p class="eyebrow">Be Your Own Broker</p>
+        <h1 id="hero-h">Walk in knowing <u>more</u> than they do.</h1>
+        <p class="hero__lede">You usually can't buy straight from the factory — so here's the dealer's own math. Rebuild your real out-the-door price, catch the rate they quietly switch, and learn to say no in the finance office. Free. No signup. Nobody selling you anything.</p>
+        <div class="hero__cta">
+          <a class="btn btn--amber" href="#check">Check my deal →</a>
+          <a class="btn btn--ghost" href="/playbook">Read the playbook</a>
+        </div>
+      </div>
+      <div class="foc" aria-hidden="true">
+        <div class="foc__head">
+          <h3>The five numbers</h3>
+          <p>Every car loan runs on these. Know four, the fifth can't hide.</p>
+        </div>
+        <div class="foc__body">
+          <div class="foc__summary" style="grid-template-columns:1fr">
+            <div><div class="k">Amount financed</div><div class="v">the real one, after fees</div></div>
+            <div><div class="k">Interest rate</div><div class="v">quoted vs. actual</div></div>
+            <div><div class="k">Monthly payment</div><div class="v">where the switch hides</div></div>
+            <div><div class="k">Number of payments</div><div class="v">the term they stretch</div></div>
+            <div><div class="k">Final balance</div><div class="v">$0 on an honest loan</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--line" id="check" aria-labelledby="check-h">
+    <div class="wrap">
+      <p class="eyebrow">The Finance-Office Check</p>
+      <h2 id="check-h">Paste their numbers. We find the switch.</h2>
+      <p style="max-width:44rem;color:var(--dim);margin:14px 0 30px">Pull these straight off the dealer's worksheet or your loan paperwork. It runs in your browser — nothing is sent anywhere, and there's nothing to sign up for. The example below is pre-filled; change it to your own.</p>
+
+      <div class="foc-layout">
+        <form class="foc" id="foc-form">
+          <div class="foc__head">
+            <h3>Your deal</h3>
+            <p>Leave a box blank if you don't have it yet.</p>
+          </div>
+          <div class="foc__body">
+            <fieldset style="border:0;padding:0;margin:0">
+              <legend class="foc__legend">Out-the-door price</legend>
+              <div class="foc__grid">
+                <div class="foc__field">
+                  <label for="foc-price">Vehicle price</label>
+                  <div class="foc__input"><span class="pre">$</span><input id="foc-price" inputmode="decimal" value="30000"></div>
+                </div>
+                <div class="foc__field">
+                  <label for="foc-fees">Add-ons &amp; fees</label>
+                  <div class="foc__input"><span class="pre">$</span><input id="foc-fees" inputmode="decimal" value="1400"></div>
+                </div>
+                <div class="foc__field">
+                  <label for="foc-tax">Sales tax</label>
+                  <div class="foc__input"><span class="pre">$</span><input id="foc-tax" inputmode="decimal" value="2100"></div>
+                </div>
+                <div class="foc__field">
+                  <label for="foc-down">Down + trade-in</label>
+                  <div class="foc__input"><span class="pre">$</span><input id="foc-down" inputmode="decimal" value="3000"></div>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset style="border:0;padding:0;margin:0">
+              <legend class="foc__legend">The financing they quoted</legend>
+              <div class="foc__grid">
+                <div class="foc__field">
+                  <label for="foc-apr">APR quoted</label>
+                  <div class="foc__input"><input id="foc-apr" inputmode="decimal" value="4.9"><span class="post">%</span></div>
+                </div>
+                <div class="foc__field">
+                  <label for="foc-term">Term</label>
+                  <div class="foc__input"><input id="foc-term" inputmode="numeric" value="72"><span class="post">mo</span></div>
+                </div>
+                <div class="foc__field">
+                  <label for="foc-payment">Monthly payment</label>
+                  <div class="foc__input"><span class="pre">$</span><input id="foc-payment" inputmode="decimal" value="560"></div>
+                </div>
+                <div class="foc__field">
+                  <label for="foc-trade" class="visually-hidden">Balloon (optional)</label>
+                </div>
+              </div>
+            </fieldset>
+            <div class="foc__actions">
+              <button type="submit" class="btn btn--amber">Check it</button>
+              <button type="reset" class="btn btn--ghost" id="foc-reset">Clear</button>
+            </div>
+          </div>
+        </form>
+
+        <div>
+          <div class="foc__out" id="foc-output" aria-live="polite"></div>
+          <p class="foc__note" style="margin-top:16px">This is a math check, not financial advice — it tells you whether the numbers on your own paperwork agree with each other. Always read the contract you sign.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--line" id="why" aria-labelledby="why-h">
+    <div class="wrap">
+      <p class="eyebrow">Why this exists</p>
+      <h2 id="why-h">The deck is stacked. This unstacks it a little.</h2>
+      <p style="max-width:46rem;color:var(--body);font-size:1.1rem;margin:16px 0 40px">For most new cars, you can't buy straight from the manufacturer — the sale runs through a franchised dealer whose finance office earns money on what you don't notice. You don't get to skip the middleman. You <em>do</em> get to walk in knowing exactly how their math works.</p>
+      <div class="strip">
+        <div class="strip__item"><div class="n">5</div><div class="l">numbers run every loan. Know four and the fifth has nowhere to hide.</div></div>
+        <div class="strip__item"><div class="n">$0</div><div class="l">to check your own deal. No account, no email, nothing sold to you.</div></div>
+        <div class="strip__item"><div class="n">You</div><div class="l">are the only person at that desk working for you. Act like it.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section quote wrap">
+    <blockquote>"Negotiate as much as you want — they can only say yes or no. If you don't like the deal, walk out. The manager almost always calls back."</blockquote>
+    <cite>— the whole playbook, in one line</cite>
+  </section>
+
+  <section class="section cta-band">
+    <div class="wrap">
+      <h2>The tool checks one deal. The playbook wins the whole thing.</h2>
+      <p>The exact order of moves — from pre-approval to the out-the-door quote in writing to the finance-office no's — written by someone tired of watching good people overpay.</p>
+      <a class="btn btn--dark" href="/playbook">Read the playbook →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <span class="brand">BY<em>O</em>B</span>
+        <p>Be Your Own Broker is a free, independent car-buying toolkit. We don't sell cars, loans, or leads. We just show you the math the finance office hopes you'll skip.</p>
+      </div>
+      <div>
+        <h4>The toolkit</h4>
+        <ul>
+          <li><a href="/#check">Finance-Office Check</a></li>
+          <li><a href="/playbook">The Playbook</a></li>
+          <li><a href="/playbook#fees">Fees you can refuse</a></li>
+          <li><a href="/playbook#walk">Walking away</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>The fine print</h4>
+        <ul>
+          <li><a href="/privacy">Privacy</a></li>
+          <li><a href="/accessibility">Accessibility</a></li>
+          <li><a href="/terms">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-credit">© 2026 Be Your Own Broker. Not financial advice.</p>
+      <div class="compliance">
+        <a href="/privacy">Privacy</a>
+        <a href="/accessibility">Accessibility</a>
+        <a href="/terms">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/tool.js" defer></script>
+<script src="/site.js" defer></script>
+</body>
+</html>
