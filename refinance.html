@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auto Refinance Estimator — how much a better rate saves | BYOB</title>
+<meta name="description" content="Already signed a car loan at too high a rate? A free, no-signup estimator: enter your balance, payment, and a better rate to see your new payment and how much interest you'd save.">
+<link rel="canonical" href="https://byob.sdfkjh.com/refinance">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Be Your Own Broker">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://byob.sdfkjh.com/refinance">
+<meta property="og:title" content="Auto Refinance Estimator — see what a better rate saves">
+<meta property="og:description" content="Enter your balance, payment, and a better rate to see your new payment and total interest saved. Free, no signup.">
+<meta property="og:image" content="https://byob.sdfkjh.com/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Auto Refinance Estimator — see what a better rate saves">
+<meta name="twitter:description" content="Enter your balance, payment, and a better rate to see your new payment and total interest saved.">
+<meta name="twitter:image" content="https://byob.sdfkjh.com/og-card.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "@id": "https://byob.sdfkjh.com/refinance#tool",
+  "name": "Auto Refinance Estimator",
+  "url": "https://byob.sdfkjh.com/refinance",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Estimates a new monthly payment and total interest saved from refinancing a car loan at a lower rate.",
+  "inLanguage": "en-US"
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="/">BY<em>O</em>B <span class="brand__full">Be Your Own Broker</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu">☰</button>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="/#check">The Check</a>
+      <a href="/playbook">The Playbook</a>
+      <a href="/checklist">Checklist</a>
+      <a href="/jargon">Jargon</a>
+      <a href="/#why">Why BYOB</a>
+      <a class="nav__cta" href="/#check">Check a deal</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero wrap section--tight" aria-labelledby="rh">
+    <p class="eyebrow">The Refinance Check</p>
+    <h1 id="rh">Already signed a bad rate? See what a refinance saves.</h1>
+    <p class="hero__lede">If a dealer stuck you with a rate higher than your credit deserved, you're not stuck with it forever. Put in your numbers and a rate you could get elsewhere — it runs in your browser, nothing is sent anywhere, and there's nothing to sign up for.</p>
+  </section>
+
+  <section class="section section--line" id="estimate" aria-labelledby="estimate-h">
+    <div class="wrap">
+      <h2 id="estimate-h" class="visually-hidden">Refinance estimator</h2>
+      <div class="foc-layout">
+        <form class="foc" id="refi-form">
+          <div class="foc__head">
+            <h3>Your loan now</h3>
+            <p>Pull these off your latest loan statement.</p>
+          </div>
+          <div class="foc__body">
+            <fieldset>
+              <legend class="foc__legend">Where you stand</legend>
+              <div class="foc__grid">
+                <div class="foc__field">
+                  <label for="refi-balance">Amount you still owe</label>
+                  <div class="foc__input"><span class="pre">$</span><input id="refi-balance" inputmode="decimal" value="25000"></div>
+                </div>
+                <div class="foc__field">
+                  <label for="refi-payment">Current monthly payment</label>
+                  <div class="foc__input"><span class="pre">$</span><input id="refi-payment" inputmode="decimal" value="560"></div>
+                </div>
+                <div class="foc__field">
+                  <label for="refi-months">Months left on the loan</label>
+                  <div class="foc__input"><input id="refi-months" inputmode="numeric" value="60"><span class="post">mo</span></div>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend class="foc__legend">The rate you could get</legend>
+              <div class="foc__grid">
+                <div class="foc__field">
+                  <label for="refi-rate">New APR</label>
+                  <div class="foc__input"><input id="refi-rate" inputmode="decimal" value="6.5"><span class="post">%</span></div>
+                </div>
+                <div class="foc__field">
+                  <label for="refi-term">New term <span class="foc__hint">(blank = same)</span></label>
+                  <div class="foc__input"><input id="refi-term" inputmode="numeric" value=""><span class="post">mo</span></div>
+                </div>
+              </div>
+            </fieldset>
+            <div class="foc__actions">
+              <button type="submit" class="btn btn--amber">See the savings</button>
+              <button type="reset" class="btn btn--ghost" id="refi-reset">Clear</button>
+            </div>
+          </div>
+        </form>
+
+        <div>
+          <div class="foc__out" id="refi-output" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--line" aria-labelledby="when-h">
+    <div class="wrap">
+      <div class="decoder">
+        <p class="eyebrow">When it's worth it</p>
+        <h2 id="when-h">Refinancing, in plain terms</h2>
+        <p class="section__intro section__intro--lead">Refinancing just means replacing your current car loan with a new one at a better rate. The car doesn't change; the loan does. It makes the most sense when your credit has improved, or when a dealer marked up your rate in the first place.</p>
+        <p>A few things to keep straight. Chase the <strong>rate</strong>, and try to keep the <strong>term</strong> at or below what you have left — stretching the loan out lowers the monthly but can quietly add interest, which the estimator above will flag. Credit unions are almost always the cheapest place to refinance; most will pre-qualify you in minutes without touching your credit score. And there's usually little to no cost to refinance an auto loan, but ask, and watch for any prepayment penalty on your <em>current</em> loan.</p>
+        <div class="callout">
+          <p><strong>Already signed and want the rest of it back?</strong> The add-ons a finance office talked you into — warranties, GAP, the protection packages — can usually be canceled for a refund too. Here's how: <a href="/jargon#cancel">the escape hatch</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-band">
+    <div class="wrap">
+      <h2>Next time, catch it before you sign.</h2>
+      <p>The Finance-Office Check spots a marked-up rate while you're still at the desk — when saying no is free.</p>
+      <a class="btn btn--dark" href="/#check">Check a deal →</a>
+      <a class="btn btn--dark" href="/playbook">Read the playbook →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <span class="brand">BY<em>O</em>B</span>
+        <p>Be Your Own Broker is a free, independent car-buying toolkit. We don't sell cars, loans, or leads. We just show you the math the finance office hopes you'll skip.</p>
+      </div>
+      <div>
+        <h4>The toolkit</h4>
+        <ul>
+          <li><a href="/#check">Finance-Office Check</a></li>
+          <li><a href="/refinance">Refinance estimator</a></li>
+          <li><a href="/playbook">The Playbook</a></li>
+          <li><a href="/checklist">Print-and-go checklist</a></li>
+          <li><a href="/jargon">Jargon decoder</a></li>
+          <li><a href="/playbook#vet">Check the car's history</a></li>
+          <li><a href="/playbook#fees">Fees you can refuse</a></li>
+          <li><a href="/playbook#walk">Walking away</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>The fine print</h4>
+        <ul>
+          <li><a href="/privacy">Privacy</a></li>
+          <li><a href="/accessibility">Accessibility</a></li>
+          <li><a href="/terms">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-credit">© 2026 Be Your Own Broker. Not financial advice.</p>
+      <div class="compliance">
+        <a href="/privacy">Privacy</a>
+        <a href="/accessibility">Accessibility</a>
+        <a href="/terms">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/refi.js" defer></script>
+<script src="/site.js" defer></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "706e96eff7b14a30a40eff0d2799f1a3"}'></script>
+</body>
+</html>

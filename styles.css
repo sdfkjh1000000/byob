@@ -154,6 +154,7 @@ p:last-child { margin-bottom: 0; }
 .foc__legend { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.72rem; color: var(--amber); border: 0; padding: 16px 0 6px; margin: 0; width: 100%; }
 .foc__field { display: flex; flex-direction: column; gap: 5px; padding: 7px 0; }
 .foc__field label { font-size: 0.86rem; color: var(--body); }
+.foc__hint { color: var(--dim); font-weight: 400; }
 .foc__input { display: flex; align-items: center; border: 2px solid var(--line-2); background: #000; }
 .foc__input .pre { padding: 0 2px 0 10px; color: var(--dim); font-size: 0.95rem; }
 .foc__input .post { padding: 0 10px 0 2px; color: var(--dim); font-size: 0.95rem; }
