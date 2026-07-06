@@ -9,7 +9,8 @@ Every fully amortizing car loan is defined by five numbers: amount financed, int
 ## Key pages
 
 - [Home and Finance-Office Check](https://byob.sdfkjh.com/): The interactive tool. Enter vehicle price, fees, tax, down payment, quoted APR, term, and monthly payment; it returns the real out-the-door price, the amount financed, the APR the payment actually implies, and flags any mismatch with the quoted rate.
-- [The Playbook](https://byob.sdfkjh.com/playbook): The full plain-English guide — get pre-approved, pin down the car, get the out-the-door price in writing, make dealers compete (includes a copy-paste quote-request email), refuse finance-office add-ons, and walk away when needed.
+- [The Playbook](https://byob.sdfkjh.com/playbook): The full plain-English guide — get pre-approved, pin down the car, get the out-the-door price in writing, make dealers compete (includes a copy-paste quote-request email), vet the actual car by VIN, refuse finance-office add-ons, and walk away when needed.
+- [The Dealer-Day Checklist](https://byob.sdfkjh.com/checklist): A printable one-page checklist condensing the playbook into tickable steps to bring to the dealership.
 - [Privacy](https://byob.sdfkjh.com/privacy): The site collects no personal information; tools run entirely in the browser.
 - [Accessibility](https://byob.sdfkjh.com/accessibility): Conformance target is WCAG 2.2 AA.
 - [Terms](https://byob.sdfkjh.com/terms): Educational content and tools, provided as-is, not financial advice.
