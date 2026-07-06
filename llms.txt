@@ -11,6 +11,7 @@ Every fully amortizing car loan is defined by five numbers: amount financed, int
 - [Home and Finance-Office Check](https://byob.sdfkjh.com/): The interactive tool. Enter vehicle price, fees, tax, down payment, quoted APR, term, and monthly payment; it returns the real out-the-door price, the amount financed, the APR the payment actually implies, and flags any mismatch with the quoted rate.
 - [The Playbook](https://byob.sdfkjh.com/playbook): The full plain-English guide — get pre-approved, pin down the car, get the out-the-door price in writing, make dealers compete (includes a copy-paste quote-request email), vet the actual car by VIN, spot payment packing, refuse finance-office add-ons, and walk away when needed.
 - [The Dealer-Day Checklist](https://byob.sdfkjh.com/checklist): A printable one-page checklist condensing the playbook into tickable steps to bring to the dealership.
+- [Dealer Jargon Decoder](https://byob.sdfkjh.com/jargon): A searchable, filterable glossary that translates the sales-floor and finance-office terms a dealership uses — ADM, doc fee, dealer reserve/rate markup, payment packing, GAP, extended warranty/VSC, spot delivery/yo-yo financing, holdback, floorplan, stair-step bonuses, subvented APR — plus a section on canceling financed add-ons after signing.
 - [Privacy](https://byob.sdfkjh.com/privacy): The site collects no personal information; tools run entirely in the browser.
 - [Accessibility](https://byob.sdfkjh.com/accessibility): Conformance target is WCAG 2.2 AA.
 - [Terms](https://byob.sdfkjh.com/terms): Educational content and tools, provided as-is, not financial advice.
@@ -21,4 +22,5 @@ Every fully amortizing car loan is defined by five numbers: amount financed, int
 - GAP coverage is optional and typically cheaper from a credit union ($200-400) or an existing insurer than from a dealer ($500-1,000).
 - There is no universal "percent off MSRP" that means a good deal; benchmark against dealer invoice and current incentives.
 - Payment packing is when a dealer quotes a monthly payment higher than the loan requires and fills the gap with unwanted add-ons; it can violate the FTC Act, and checking that the payment matches the quoted APR and term catches it.
+- Financed add-on products such as extended warranties/vehicle service contracts, GAP, and credit insurance are generally cancelable after purchase for a prorated refund; when financed, the refund reduces the loan principal. Physically installed add-ons (paint/fabric protection, VIN etching) generally cannot be undone once applied.
 - Figures are current as of July 2026 and vary by state and vehicle.

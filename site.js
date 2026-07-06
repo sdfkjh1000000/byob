@@ -46,6 +46,35 @@
     copyValue(text, el, isField ? tgt : null);
   });
 
+  var decoder = document.querySelector("[data-decoder]");
+  if (decoder) {
+    var search = decoder.querySelector("[data-decoder-search]");
+    var chips = decoder.querySelectorAll("[data-filter]");
+    var terms = decoder.querySelectorAll(".term");
+    var empty = decoder.querySelector(".decoder__empty");
+    var activeCat = "all";
+    var applyFilter = function () {
+      var q = (search && search.value || "").trim().toLowerCase();
+      var shown = 0;
+      Array.prototype.forEach.call(terms, function (t) {
+        var cat = t.getAttribute("data-cat") || "";
+        var match = (activeCat === "all" || cat === activeCat) &&
+          (!q || t.textContent.toLowerCase().indexOf(q) !== -1);
+        t.hidden = !match;
+        if (match) shown++;
+      });
+      if (empty) empty.style.display = shown ? "none" : "block";
+    };
+    if (search) search.addEventListener("input", applyFilter);
+    Array.prototype.forEach.call(chips, function (c) {
+      c.addEventListener("click", function () {
+        activeCat = c.getAttribute("data-filter");
+        Array.prototype.forEach.call(chips, function (x) { x.setAttribute("aria-pressed", String(x === c)); });
+        applyFilter();
+      });
+    });
+  }
+
   var canonical = document.querySelector('link[rel="canonical"]');
   var shareUrl = canonical ? canonical.href : location.href;
   Array.prototype.forEach.call(document.querySelectorAll("[data-share]"), function (box) {
