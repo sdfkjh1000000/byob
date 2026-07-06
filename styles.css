@@ -285,7 +285,7 @@ p:last-child { margin-bottom: 0; }
 .decoder__search input:focus { outline: none; }
 .decoder__search:focus-within { border-color: var(--amber); }
 .decoder__chips { display: flex; flex-wrap: wrap; gap: 8px; }
-.chip { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.76rem; font-weight: 600; color: var(--dim); background: var(--surface); border: 2px solid var(--line-2); padding: 7px 14px; cursor: pointer; min-height: 38px; }
+.chip { display: inline-flex; align-items: center; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.76rem; font-weight: 600; color: var(--dim); background: var(--surface); border: 2px solid var(--line-2); padding: 7px 14px; cursor: pointer; min-height: 44px; }
 .chip:hover { color: var(--ink); }
 .chip[aria-pressed="true"] { color: #0a0a0a; background: var(--amber); border-color: var(--amber); }
 .term { background: var(--surface); border: 2px solid var(--line); border-left: 4px solid var(--line-2); padding: 18px 22px; margin-bottom: 14px; }
