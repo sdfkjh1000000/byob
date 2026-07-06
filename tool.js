@@ -101,6 +101,7 @@
           block += '<h4>⚠ The numbers don’t reconcile</h4>';
           block += '<p>At the <b>' + apr.toFixed(2) + '%</b> APR they quoted, a ' + fmtUSD.format(financed) + ' loan over ' + term + ' months should cost <b>' + fmtUSD2.format(expectedPay) + '/mo</b>. They wrote <b>' + fmtUSD2.format(payment) + '/mo</b> — which is really <b>' + impliedApr.toFixed(2) + '% APR</b>.</p>';
           block += '<p>That gap adds up to about <b>' + fmtUSD.format(totalGap) + '</b> over the life of the loan. Ask them to re-print the contract at the rate they promised before you sign anything.</p>';
+          block += '<div class="foc__say"><b>Say this at the desk</b><span id="foc-say-line">This payment works out to ' + impliedApr.toFixed(2) + '% APR, not the ' + apr.toFixed(2) + '% you quoted — that\'s about ' + fmtUSD.format(totalGap) + ' over the loan. Re-print it at the rate you promised, or I\'ll use my own financing.</span><button class="copy-btn" type="button" data-copy="foc-say-line">Copy this line</button></div>';
           block += '</div>';
         } else if (payGap < -tol) {
           block += '<div class="foc__verdict foc__verdict--ok">';

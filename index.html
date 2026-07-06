@@ -179,6 +179,7 @@
             </fieldset>
             <div class="foc__actions">
               <button type="submit" class="btn btn--amber">Check it</button>
+              <button type="button" class="btn btn--ghost" id="foc-save">Save to compare</button>
               <button type="reset" class="btn btn--ghost" id="foc-reset">Clear</button>
             </div>
           </div>
@@ -189,6 +190,8 @@
           <p class="foc__note">This is a math check, not financial advice — it tells you whether the numbers on your own paperwork agree with each other. Always read the contract you sign.</p>
         </div>
       </div>
+
+      <div class="compare" id="foc-compare" hidden></div>
     </div>
   </section>
 
@@ -269,6 +272,7 @@
 </footer>
 
 <script src="/tool.js" defer></script>
+<script src="/compare.js" defer></script>
 <script src="/site.js" defer></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "706e96eff7b14a30a40eff0d2799f1a3"}'></script>
 </body>
