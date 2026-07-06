@@ -38,7 +38,8 @@
     var fees = num("foc-fees");
     var tax = num("foc-tax");
     var down = num("foc-down");
-    var trade = num("foc-trade");
+    var tradeValue = num("foc-trade-value");
+    var tradeOwe = num("foc-trade-owe");
     var apr = num("foc-apr");
     var term = num("foc-term");
     var payment = num("foc-payment");
@@ -47,10 +48,12 @@
     var fees0 = isNaN(fees) ? 0 : fees;
     var tax0 = isNaN(tax) ? 0 : tax;
     var down0 = isNaN(down) ? 0 : down;
-    var trade0 = isNaN(trade) ? 0 : trade;
+    var tradeValue0 = isNaN(tradeValue) ? 0 : tradeValue;
+    var tradeOwe0 = isNaN(tradeOwe) ? 0 : tradeOwe;
 
+    var negativeEquity = Math.max(0, tradeOwe0 - tradeValue0);
     var otd = price0 + fees0 + tax0;
-    var financed = Math.max(0, otd - down0 - trade0);
+    var financed = Math.max(0, otd - down0 - tradeValue0 + tradeOwe0);
 
     if (otd <= 0) {
       out.innerHTML = '<p class="foc__note">Enter at least the vehicle price to begin. Everything else you can pull straight off the dealer’s worksheet.</p>';
@@ -63,6 +66,13 @@
     html += '<div><div class="k">Out-the-door price</div><div class="v">' + fmtUSD.format(otd) + '</div></div>';
     html += '<div><div class="k">Amount financed</div><div class="v">' + fmtUSD.format(financed) + '</div></div>';
     html += '</div>';
+
+    if (negativeEquity > 0) {
+      html += '<div class="foc__verdict foc__verdict--warn">';
+      html += '<h4>⚠ You’re rolling in negative equity</h4>';
+      html += '<p>You owe <b>' + fmtUSD.format(negativeEquity) + '</b> more on your trade-in than it’s worth, and that gap is being financed into this loan. You’re borrowing more than the car’s out-the-door price and starting out underwater. If you can, pay it down instead of rolling it in.</p>';
+      html += '</div>';
+    }
 
     var haveTerm = !isNaN(term) && term > 0;
     var havePay = !isNaN(payment) && payment > 0;
