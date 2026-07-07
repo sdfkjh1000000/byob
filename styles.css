@@ -203,6 +203,22 @@ p:last-child { margin-bottom: 0; }
 .compare__remove:hover { border-color: var(--amber); color: var(--amber); }
 .compare__clear { margin-top: 18px; }
 
+.shop { margin-top: 44px; max-width: 760px; }
+.shop__title { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.02em; font-size: 1.3rem; color: var(--ink); margin: 0 0 6px; }
+.shop__sub { color: var(--dim); font-size: 0.9rem; line-height: 1.5; margin: 0 0 20px; }
+.shop__vehicle { display: flex; flex-direction: column; gap: 5px; margin-bottom: 18px; }
+.shop__vehicle label { font-size: 0.86rem; color: var(--body); }
+.shop__vehicle input { background: #000; border: 2px solid var(--line-2); color: var(--ink); font-family: var(--font-body); font-size: 1rem; padding: 10px 12px; width: 100%; }
+.shop__vehicle input:focus { outline: none; border-color: var(--amber); }
+.shop__phases { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.shop__phase { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; color: var(--body); background: var(--surface); border: 2px solid var(--line-2); padding: 9px 14px; cursor: pointer; min-height: 40px; }
+.shop__phase:hover { border-color: var(--amber); color: var(--amber); }
+.shop__phase.is-active { background: var(--amber); color: #0a0a0a; border-color: var(--amber); }
+.shop__phase-n { font-family: var(--font-display); font-weight: 700; }
+.shop__coach { color: var(--body); font-size: 0.9rem; line-height: 1.55; margin: 0 0 12px; border-left: 3px solid var(--amber); padding-left: 14px; }
+.shop__actions { display: flex; gap: 12px; margin-top: 12px; flex-wrap: wrap; align-items: center; }
+.shop__mailto { min-height: 40px; }
+
 .article { max-width: var(--read); margin: 0 auto; }
 .article > p, .article > ul, .article > ol { font-size: 1.18rem; line-height: 1.75; color: var(--body); }
 .article h2 { margin: 2em 0 0.6em; font-size: clamp(24px, 3.4vw, 34px); }

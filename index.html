@@ -194,6 +194,29 @@
       </div>
 
       <div class="compare" id="foc-compare" hidden></div>
+
+      <div class="shop" id="foc-shop">
+        <h3 class="shop__title">Turn the numbers into a dealer email</h3>
+        <p class="shop__sub">Three moves, in the order a broker runs them. Name the car once and your out-the-door price flows in from the check above — copy it, or open it straight in your email app.</p>
+
+        <div class="shop__vehicle">
+          <label for="shop-vehicle">The car — year, make, model, trim</label>
+          <input id="shop-vehicle" type="text" placeholder="2026 Honda CR-V EX-L" autocomplete="off">
+        </div>
+
+        <div class="shop__phases" role="group" aria-label="Which email">
+          <button class="shop__phase" data-phase="1" type="button" aria-pressed="true"><span class="shop__phase-n">1</span> Get quotes</button>
+          <button class="shop__phase" data-phase="2" type="button" aria-pressed="false"><span class="shop__phase-n">2</span> Make them beat it</button>
+          <button class="shop__phase" data-phase="3" type="button" aria-pressed="false"><span class="shop__phase-n">3</span> Lock it in</button>
+        </div>
+
+        <p class="shop__coach" id="shop-coach"></p>
+        <textarea class="email-tpl" id="shop-email" readonly rows="14" aria-label="Dealer email you can copy"></textarea>
+        <div class="shop__actions">
+          <button class="copy-btn" data-copy="shop-email" type="button">Copy email</button>
+          <a class="btn btn--ghost shop__mailto" id="shop-mailto" href="#">Open in email app</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -275,6 +298,7 @@
 
 <script src="/tool.js" defer></script>
 <script src="/compare.js" defer></script>
+<script src="/shop.js" defer></script>
 <script src="/site.js" defer></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "706e96eff7b14a30a40eff0d2799f1a3"}'></script>
 </body>
