@@ -63,6 +63,12 @@ a { color: var(--amber); }
 .section__intro { max-width: 44rem; color: var(--dim); margin: 14px 0 30px; }
 .section__intro--lead { max-width: 46rem; color: var(--body); font-size: 1.1rem; margin: 16px 0 40px; }
 
+.bridge { background: var(--amber-dim); border-top: 2px solid var(--line); padding-block: clamp(40px, 6vw, 64px); }
+.bridge__line { font-family: var(--font-display); font-weight: 700; text-transform: uppercase; font-size: clamp(30px, 5.2vw, 54px); line-height: 1.04; color: var(--ink); margin: 0 0 20px; max-width: 20ch; }
+.bridge__line u { text-decoration-color: var(--amber); text-decoration-thickness: 5px; text-underline-offset: 5px; }
+.bridge__body { color: var(--body); font-size: 1.12rem; line-height: 1.6; max-width: 42rem; margin: 0 0 16px; }
+.bridge__cue { color: var(--amber); font-size: 0.95rem; font-weight: 600; margin: 0; }
+
 .eyebrow {
   font-family: var(--font-display);
   font-weight: 600;
